@@ -5,11 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>REST Countries & Weather</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card {
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-  <div class="container my-4">
+  <div class="container">
+    <h1 id="title" class="text-center">REST Countries & Weather</h1>
     <div class="row" id="countries-container"></div>
   </div>
+
   <script src="script.js"></script>
   <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
 </body>
